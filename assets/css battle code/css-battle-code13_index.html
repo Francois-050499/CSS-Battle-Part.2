@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle Solutions</title>
+</head>
+
+<body>
+
+    <!-- Please refer to ... -->
+
+    <!--#69. PushOwl-->
+
+    <div></div>
+    <div></div>
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+    <div></div>
+
+    <style>
+    body {
+        background-color: #191919;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    div:nth-of-type(1),
+    div:nth-of-type(2) {
+        width: 114px;
+        height: 114px;
+        background-color: #E08027;
+    }
+    
+    div:nth-of-type(1) {
+        transform: translate(-111px,-73px);
+        border-radius: 0 50% 50% 50%;
+    }
+    
+    div:nth-of-type(2) {
+        transform: translate(-3px,-73px);
+        border-radius: 50% 0 50% 50%;
+        box-shadow: 0 0 0 10px #191919;
+    }
+    
+    div:nth-of-type(3) {
+        transform: translate(-99px,-61px);
+        width: 90px;
+        height: 90px;
+        background-color: #191919;
+        border-radius: 50%;
+        box-shadow: 108px 0 0 0 #191919;
+    }
+    
+    div:nth-of-type(4) {
+        transform: translate(-50%,12px) rotate(45deg);
+        width: 50px;
+        height: 50px;
+        background-color: #E08027;
+        z-index: -1;
+    }
+    
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 11px;
+        height: 5.5px;
+        border: 9.5px solid #E08027;
+        border-bottom: 0;
+        border-radius: 100px 100px 0 0;
+    }
+    
+    span:nth-of-type(1) {
+        transform: translate(-15px,-9px);
+    }
+    
+    span:nth-of-type(2) {
+        transform: translate(93px,-9px);
+    }
+    </style>
+    
+    <!-------------------------------->
+
+    <!--#70. Froggy-->
+    
+    <!--#71. Elephant-->
+    <!--#72. Sheep-->
+    <!--#73. Happy Tiger-->
+    <!--#74. Danger Noodle-->
+    <!--#75. Hippo-->
+    <!--#76. Beeee-->
+
+
+
+    <!-------------------------------->
+</body>
+
+</html>
