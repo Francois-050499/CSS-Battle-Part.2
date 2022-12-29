@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle Solutions</title>
+</head>
+
+<body>
+
+    <!-- Please refer to ... -->
+
+    <!--#77. Notes-->
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+    body {
+        background-color: #191919;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    div:nth-of-type(1) {
+        transform: translate(-145px,20px);
+        width: 50px;
+        height: 40px;
+        background-color: #FE5F55;
+        border-radius: 50%;
+        box-shadow: 70px 0 0 0 #FE5F55,
+                    140px 0 0 0 #A64942,
+                    210px 0 0 0 #FE5F55;
+    }
+    
+    div:nth-of-type(2) {
+        transform: translate(-105px,-60px);
+        width: 10px;
+        height: 100px;
+        background-color: #FE5F55;
+        box-shadow: 70px 0 0 0 #FE5F55,
+                    140px 0 0 0 #A64942,
+                    210px 0 0 0 #FE5F55;
+    }
+    
+    div:nth-of-type(3) {
+        transform: translate(-105px,-60px);
+        width: 30px;
+        height: 10px;
+        background-color: #FE5F55;
+        box-shadow: 20px 0 0 0 #FE5F55,
+                    40px 0 0 0 #FE5F55,
+                    150px 0 0 0 #A64942,
+                    220px 0 0 0 #FE5F55,
+                    220px 20px 0 0 #FE5F55;
+    }
+    </style>
+
+    <!-------------------------------->
+
+    <!--#78. Ukulele-->
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    
+    <style>
+    body {
+        background-color: #F3AC3C;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%
+    }
+    
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%
+    }
+    
+    div:nth-of-type(1) {
+        transform: translate(-155px,-50%);
+        width: 120px;
+        height: 120px;
+        background-color: #998235;
+        border-radius: 50%; 
+    }
+    
+    span:nth-of-type(1) {
+        transform: translate(-20px,-50%);
+        width: 10px;
+        height: 40px;
+        background-color: #1A4341;
+        border-radius: 20px; 
+    }
+    
+    span:nth-of-type(2) {
+        transform: translate(40px,-50%);
+        width: 40px;
+        height: 40px;
+        background-color: #1A4341;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px #F3AC3C;
+    }
+    
+    div:nth-of-type(2) {
+        transform: translate(-85px,-50%);
+        width: 100px;
+        height: 100px;
+        background-color: #998235;
+        border-radius: 50%; 
+        z-index: -1;
+    }
+    
+    div:nth-of-type(3) {
+        transform: translate(-5px,-50%);
+        width: 140px;
+        height: 20px;
+        background-color: #1A4341;
+        z-index: -2;
+    }
+    
+    div:nth-of-type(4) {
+        transform: translate(115px,-50%);
+        width: 40px;
+        height: 30px;
+        background-color: #998235;
+        border-radius: 10px;
+    }
+    
+    div:nth-of-type(5) {
+        transform: translate(125px,-7px);
+        width: 20px;
+        height: 4px;
+        background-color: #1A4341;
+        border-radius: 10px;
+        box-shadow: 0 10px 0 0 #1A4341;
+    }
+    </style>
+
+    <!-------------------------------->
+
+    <!--#79. Tambourine-->
+    <div>
+        <span></span>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    
+    <style>
+    body {
+        background-color: #6592CF;
+        position: relative;
+    }
+    
+    div:nth-of-type(1) {
+        position: absolute;
+        transform: translate(107px,67px);
+        width: 150px;
+        height: 150px;
+        border: 10px solid #243D83;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    span {
+        position: absolute;
+        transform: translate(15px,115px);
+        width: 100px;
+        height: 100px;
+        border: 10px solid #243D83;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    div:nth-of-type(2) {
+        position: absolute;
+        transform: translate(142px,202px);
+        width: 100px;
+        height: 100px;
+        background-color: #6592CF;
+        border-radius: 50%;
+    }
+    
+    div:nth-of-type(3),
+    div:nth-of-type(4),
+    div:nth-of-type(5) {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #243D83;
+        border: 10px solid #6592CF;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px#243D83 ;
+    }
+    
+    div:nth-of-type(3) {
+        transform: translate(177px,57px);
+    }
+    
+    div:nth-of-type(4) {
+        transform: translate(107px,97px);
+        -webkit-box-reflect: right 110px;
+    }
+    
+    div:nth-of-type(5) {
+        transform: translate(107px,167px);
+        -webkit-box-reflect: right 110px;
+    }
+    </style>
+
+    <!-------------------------------->
+
+    <!--#80. Piano-->
+
+    <!-------------------------------->
+</body>
+
+</html>
