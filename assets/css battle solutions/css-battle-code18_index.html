@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle Solutions</title>
+</head>
+
+<body>
+
+    <!-- Please refer to ... -->
+
+    <!--#101 Sharingan-->
+
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div></div>
+    <div></div>
+
+    <style>
+    body {
+        background-color: #161616;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div:nth-of-type(1) {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    div:nth-of-type(2) {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        background-color: #A22015;
+        border-radius: 50%;
+    }
+
+    div:nth-of-type(3) {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        border: solid 10px #E96A23;
+        border-radius: 50%;
+        box-shadow: 0 0 0 15px #000000;
+    }
+
+    span:nth-of-type(1),
+    span:nth-of-type(2),
+    span:nth-of-type(3) {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: solid 15px #000000;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    span:nth-of-type(1) {
+        transform: translate(-23.5px,7.5px);
+    }
+
+    span:nth-of-type(2) {
+        transform: translate(123.5px,7.5px);
+    }
+
+    span:nth-of-type(3) {
+        transform: translate(50px,135px);
+    }
+    </style>
+
+    <!-------------------------------->
+
+    <!--#102. One Piece-->
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    
+    <style>
+    body {
+        background-color: #000000;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    div:nth-of-type(1) {
+        transform: translate(-50%,-40px);
+        width: 150px;
+        height: 100px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+    }
+    
+    div:nth-of-type(2),
+    div:nth-of-type(4),
+    div:nth-of-type(6),
+    div:nth-of-type(8) {
+        width: 19px;
+        height: 19px;
+        background-color: #FFFFFF;
+    }
+    
+    div:nth-of-type(2) {
+        transform: translate(-86px,-46px) rotate(45deg);
+    }
+    
+    div:nth-of-type(4) {
+        transform: translate(-86px,46px) rotate(45deg);
+    }
+    
+    div:nth-of-type(6) {
+        transform: translate(67px,-46px) rotate(45deg);
+    }
+    
+    div:nth-of-type(8) {
+        transform: translate(67px,47px) rotate(45deg);
+    }
+    
+    div:nth-of-type(3),
+    div:nth-of-type(5),
+    div:nth-of-type(7),
+    div:nth-of-type(9) {
+        width: 25px;
+        height: 25px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+    }
+    
+    div:nth-of-type(3) {
+        transform: translate(-105px,-55px);
+        box-shadow: 10px -10px 0 0 #FFFFFF;
+    }
+    
+    div:nth-of-type(5) {
+        transform: translate(-105px,50px);
+        box-shadow: 10px 10px 0 0 #FFFFFF;
+    }
+    
+    div:nth-of-type(7) {
+        transform: translate(70px,-65px);
+        box-shadow: 10px 10px 0 0 #FFFFFF;
+    }
+    
+    div:nth-of-type(9) {
+        transform: translate(70px,60px);
+        box-shadow: 10px -10px 0 0 #FFFFFF;
+    }
+    
+    div:nth-of-type(10) {
+        width: 15px;
+        height: 20px;
+        transform: translate(-27px,70px);
+        background-color: #FFFFFF;
+        box-shadow: 20px 0 0 0 #FFFFFF,
+                    40px 0 0 0 #FFFFFF;
+    }
+    
+    span:nth-of-type(1),
+    span:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 50px;
+        background-color: #000000;
+        border-radius: 50%;
+    }
+    
+    span:nth-of-type(1) {
+        transform: translate(-50px,-50%) rotate(-120deg);
+    }
+    
+    span:nth-of-type(2) {
+        transform: translate(10px,-50%) rotate(120deg);
+    }
+    </style>
+      
+    <!-------------------------------->
+
+    <!--#103. Super Saiyan-->
+    <div></div>
+
+    <!-------------------------------->
+
+    <!--#104. Amegakure-->
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+      
+    <style>
+    body {
+        background-color: #000000;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    div:nth-of-type(1) {
+        transform: translate(-50%,-50%);
+        width: 240px;
+        height: 120px;
+        background-color: #37385A;
+        border-radius: 20px;
+    }
+    
+    div:nth-of-type(2) {
+        transform: translate(-50%,-50%);
+        width: 200px;
+        height: 80px;
+        background-color: #9897AE;
+        border-radius: 10px
+    }
+    
+    span:nth-of-type(1) {
+        transform: translate(-50%,-50%) skew(-15deg);
+        width: 52px;
+        height: 80px;
+        background-color: #C0C3DB;
+    }
+    
+    span:nth-of-type(2) {
+        transform: translate(-85px,-25px);
+        width: 10px;
+        height: 10px;
+        background-color: #000000;
+        border-radius: 50%;
+        box-shadow: 0 20px 0 0 #000000,
+                    0 40px 0 0 #000000,
+                    160px 0 #000000,
+                    160px 20px #000000,
+                    160px 40px #000000;
+    }
+    
+    span:nth-of-type(3) {
+        transform: translate(-35px,-25px);
+        width: 10px;
+        height: 50px;
+        background-color: #000000;
+        border-radius: 50px;
+        box-shadow: 20px 0 0 0 #000000,
+                    40px 0 0 0 #000000,
+                    60px 0 0 0 #000000;
+    }
+    </style>
+    <!-------------------------------->
+
+    <!--#105. Ryuk-->
+
+    <!-------------------------------->
+
+    <!--#106. Ryuk's Apple-->
+
+    <!-------------------------------->
+
+    <!--#107. Sealing Wand-->
+
+    <!-------------------------------->
+
+    <!--#108. Clow Card-->
+
+    <!-------------------------------->
+</body>
+
+</html>
