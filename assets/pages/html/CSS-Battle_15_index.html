@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="8問が出題されていて、いびつな図形も多く混ざっている。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/destyle.css">
+    <title>CSS Battle #15</title>
+</head>
+
+<body>
+
+    <section class="section">
+        <h2 class="section-title section-button">Battle #15 - Filter</h2>
+        <p class="section-description">Battle.15では、8問が出題されていて、いびつな図形が出てきている。難易度を見てみましょう。</p>
+
+        <h2 class="section-title-sub">#81. Odoo</h2>
+        <p class="section-picture"><img src="../../images/15-81.png" alt="Odoo"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">borderで作った円を複数作ることができたらもう終わり</p>
+
+        <h2 class="section-title-sub">#82. Diamond Cut</h2>
+        <p class="section-picture"><img src="../../images/15-82.png" alt="ダイアモンドカット"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">大きな枠線を小さな四角形で隠して再現のマークを作るが、その大きさ地調節が地味に面倒だった。</p>
+
+        <h2 class="section-title-sub">#83. Supernova</h2>
+        <p class="section-picture"><img src="../../images/15-83.png" alt="超新星"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">半円を-webkit-box-reflectでそれぞれ配置させて作った結果、99.9% match で、細かな数値の差で深追いする室ようがないと思った。
+        </p>
+
+        <h2 class="section-title-sub">#84. Junction</h2>
+        <p class="section-picture"><img src="../../images/15-84.png" alt="合流地点"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">長い長方形を作って、-webkit-box-reflectで調節するだけ。</p>
+
+        <h2 class="section-title-sub">#85. Pythagoras</h2>
+        <p class="section-picture"><img src="../../images/15-85.png" alt="ピタゴラス"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">正方形の大きさを調節して、rotateの角度が絶妙な数値だった。</p>
+
+        <h2 class="section-title-sub">#86. Stairway</h2>
+        <p class="section-picture"><img src="../../images/15-86.png" alt="階段"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">box-shadowで階段の段数を表現することが工夫した点。</p>
+
+        <h2 class="section-title-sub">#87. Building Blocks</h2>
+        <p class="section-picture"><img src="../../images/15-87.png" alt="積まれたブロック"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">border-radiusの同じ箱を用意して、組み立てる。最後の中身のところは少し隙間が空くので、box-shadowで少しその隙間を埋めて解決する。
+        </p>
+
+        <h2 class="section-title-sub">#88. Tight Corner</h2>
+        <p class="section-picture"><img src="../../images/15-88.png" alt="タイトなコーナー"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">難しそうに見えてborder-radiusの違う長方形の組み合わせの二組で完成する。</p>
+
+
+        <h2 class="section-title">私が実際に記述したHTML、CSS</h2>
+        <p class="section-description-ref"><a
+                href="https://github.com/Francois-050499/CSS-Battle-Part.2/tree/main/assets"
+                target="_blank">実際に書いたものはこちら！</a></p>
+    </section>
+
+    <aside>
+        <div>
+            <a href="./CSS-Battle_15_index.html" id="back-to-top" class="back-to-top"></a>
+        </div>
+    </aside>
+
+    <script src="../../js/smoothscroll.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>
